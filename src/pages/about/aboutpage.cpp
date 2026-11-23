@@ -45,10 +45,10 @@ public:
         Picture* logo = brand->addChild<Picture>(dataPath("images/logo.svg"));
         logo->setLayoutHints({.preferredWidth = 140, .preferredHeight = 72,
                               .horizontalAlignment = Alignment::Center, .verticalAlignment = Alignment::Start});
-        Label* name = brand->addChild<Label>("Cutefish");
+        Label* name = brand->addChild<Label>("RayOS");
         name->setFontSize(metrics::points(22));
         name->setWeight(700);
-        name->setColor(Color::rgb(0x3385FF));
+        name->setColor(Color::rgb(0x00D8FF));
         name->setLayoutHints({.horizontalAlignment = Alignment::Center, .verticalAlignment = Alignment::Start});
         m_runningOn = brand->addChild<Label>(
                 format(tr("Running on {system}"), {{"system", about::prettyProductName()}}));
